@@ -49,8 +49,8 @@ function calculate() {
 
     let Totalmarks = subject1ttl + subject2ttl + subject3ttl + subject4ttl + subject5ttl + subject6ttl + subject7ttl + subject8ttl + subject9ttl + subject10ttl
 
-    let Percentage = (Totalmarks / Obtainedmarks) * 100
-    let Percent = Math.trunc( Percentage )
+    let Percentage = (Obtainedmarks / Totalmarks) * 100
+    let Percent = Math.trunc(Percentage)
     document.querySelector("#percentage").innerHTML = `Percentage = ${Percent}%`;
 
     if (Percentage > 85) {
